@@ -12,6 +12,8 @@ $env:FLASK_APP = "flaskr"
 
 $env:FLASK_ENV = "development"
 
+$env:FLASK_DEBUG = 1  
+
 flask run
 ```
 で起動
