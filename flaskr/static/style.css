@@ -1,20 +1,74 @@
-h1{
-    position: relative;
-    background: #dfefff;
-    box-shadow: 0px,0px,0px,5px #dfefff;
-    border: dashed 2px white;
-    padding: 0.2em 0.5em;
-    color: #454545;
+h1{/* h1要素全体のスタイル */
+    position: relative; /* 要素を相対位置に配置 */
+    background: #dfefff;/* 背景色を指定 */
+    box-shadow: 0px,0px,0px,5px #dfefff;/* 要素の周囲に影を付ける */
+    border: dashed 2px white;/* 白い破線の境界線を付ける */
+    padding: 0.2em 0.5em;/* 内側に少し余白を作る*/
+    color: #454545;/* テキストの色を指定 */
 }
 
-h1:after{
-    position: absolute;
-    content: '';
+h1:after{/* h1要素の後ろに装飾要素を追加 */
+    position: absolute;/* 要素を絶対位置に配置 */
+    content: '';/* 装飾要素の内容を空にする */
+    /* 左上の位置を調整 */
     left: -7px;
     top: -7px;
-    border-width: 0 0 15px 15px;
-    border-style: solid;
-    border-color: #fff #fff #a8d4ff;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    border-width: 0 0 15px 15px;/* 三角形の形状を作成 */
+    border-style: solid;/* 三角形の形状を指定 */
+    border-color: #fff #fff #a8d4ff;/* 境界線の色を指定 */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);/* 影をつける */
 
+}
+
+/* h2要素のスタイル */
+h2 {
+    /* 下線を引く */
+    border-bottom:4px solid #a8d4ff;
+    padding: 0.2em 0.5em;/* 内側に少し余白を作る*/
+}
+
+/* テーブル全体のスタイル */
+table {
+    /* テーブルの外側に影をつける */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* テーブルのセルの境界線を指定 */
+    border-collapse: collapse;
+    /* テーブルの幅を自動調整 */
+    width: auto;
+    /* 左右のマージンを自動調整して中央に配置 */
+    margin: 0 auto;
+    
+}
+
+/* テーブルのヘッダーのスタイル */
+th {
+    /* 背景色を指定 */
+    background-color: #dfefff;
+    /* テキストの色を指定 */
+    color: #454545;
+    /* テーブルのセルの境界線を指定 */
+    border: 1px solid #fff;
+    /* 内側の余白を指定 */
+    padding: 8px;
+}
+
+/* テーブルのセルのスタイル */
+td {
+    /* テーブルのセルの境界線を指定 */
+    border: 1px solid #ddd;
+    /* 内側の余白を指定 */
+    padding: 8px;
+}
+
+/*画面推移の際のボタンのスタイル*/
+input[type="submit"], a{
+    background-color: white; /* ボタンの背景色を白に設定 */
+    box-shadow: -4px -4px 8px rgb(0 0 0 / 24%), 4px 4px 8px rgb(0 0 0 / 24%);/*周りに影をつける*/
+    border: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;/*aタグの下線を消す*/
+    color:inherit/*aタグの色を黒にする*/
 }

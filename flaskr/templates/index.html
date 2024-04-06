@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <h1>サプー書店</h1>
+    <h1>書店</h1>
     <h2>今月の新刊一覧</h2>
 
     {% if books == [] %}
@@ -29,6 +29,8 @@
         {% endfor %}
       </table>
     {% endif %}
+    
       <a href="{{ url_for('form') }}">編集</a>
+    
   </body>
 </html>
